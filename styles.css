@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-color: hsl(234, 12%, 34%);
+    --sub-heading-color: hsl(229, 6%, 50%);
+    --primary-text-color: hsl(0, 0%, 60%);
+}
+
+body {
+    font-size: 0.938rem;    /* 15px */
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.flex { display: flex; }
+
+.primary-heading {
+    color: var(--heading-color);
+}
+
+.secondary-text {
+    color: var(--primary-text-color);
+}
+
+.container {
+    width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+/* header section  */
+
+header {
+    flex-direction: column;
+    text-align: center;
+    padding: 4%;
+}
+
+header p {
+    margin-top: 5px;
+}
+
+header h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--sub-heading-color);
+}
+
+header p { padding-inline: 26%; }
+
+/* services section */
+
+.service-card-section {
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    min-height: 425px;
+    width: 100%;
+}
+
+.card {
+    height: 200px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-banner {
+    border-radius: 8px 8px 0 0;
+}
+
+.card-info {
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 5px;
+    padding-inline: 30px;
+}
+
+.card h2 {
+    font-size: 1rem;
+}
+
+.card p {
+    font-size: 0.8rem;
+}
+
+.important-cards {
+    flex-direction: column;
+    gap: 25px;
+}
+
+.card-top-color-1 {
+    height: 5px;
+    background: hsl(180, 62%, 55%);
+}
+
+.card-top-color-2 {
+    height: 5px;
+    background: hsl(0, 78%, 62%);
+}
+
+.card-top-color-3 {
+    height: 5px;
+    background: hsl(34, 97%, 64%);
+}
+
+.card-top-color-4 {
+    height: 5px;
+    background: hsl(212, 86%, 64%);
+}
+
+.card-image {
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.card-image img{
+    width: 35px;
+}
